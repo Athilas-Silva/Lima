@@ -1,0 +1,108 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 0px;
+    background-color: silver;
+}
+div{
+    display: inline-block;
+    margin: 30px;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+#logo{
+    width: 40%;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    background-color: aquamarine;
+} 
+li{
+    display: inline;
+    border-bottom: solid 0px;
+    border-color: white;
+    margin: 20px;
+}
+a{
+    color: white;
+} 
+footer{
+    background-color: #352da0;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+#Texto{
+    text-align: left;
+    color: white;
+}
+#GIF{
+    width: 150px;
+    height: 150px;
+}
+#Redes{
+    display: inline-block;
+}
+#R1{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+#R2{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+#R3{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+#R4{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+}
+#primeiro{
+    background-color: yellow;
+    border-radius: 15px;
+}
+#segundo{
+    background-color: red;
+    border-radius: 15px;
+}
+#terceiro{
+    background-color: yellow;
+    border-radius: 15px;
+}
+#quarto{
+    background-color: red;
+    border-radius: 15px;
+}
+#quinto{
+    background-color: yellow;
+    border-radius: 15px;
+}
+#sexto{
+    background-color: red;
+    border-radius: 15px;
+}
+#setimo{
+    background-color: yellow;
+    border-radius: 15px;
+}
+#oitavo{
+    background-color: red;
+    border-radius: 15px;
+}
+#nono{
+    background-color: yellow;
+    border-radius: 15px;
+}
+#decimo{
+    background-color: red;
+    border-radius: 15px;
+}
