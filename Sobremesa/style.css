@@ -2,7 +2,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     margin: 0px;
-    background-color: silver;
+    background-color: rgb(229, 234, 235)
 }
 div{
     display: inline-block;
@@ -22,7 +22,7 @@ img{
 header{
     display: flex;
     justify-content: space-around;
-    background-color: aquamarine;
+    background-color: white;
 } 
 li{
     display: inline;
@@ -76,42 +76,42 @@ footer{
     margin: 10px;
 }
 #primeiro{
-    background-color: yellow;
+    background-color: white;
     border-radius: 15px;
 }
 #segundo{
-    background-color: red;
+    background-color: white;
     border-radius: 15px;
 }
 #terceiro{
-    background-color: yellow;
+    background-color: white;
     border-radius: 15px;
 }
 #quarto{
-    background-color: red;
+    background-color: white;
     border-radius: 15px;
 }
 #quinto{
-    background-color: yellow;
+    background-color: white;
     border-radius: 15px;
 }
 #sexto{
-    background-color: red;
+    background-color: white;
     border-radius: 15px;
 }
 #setimo{
-    background-color: yellow;
+    background-color: white;
     border-radius: 15px;
 }
 #oitavo{
-    background-color: red;
+    background-color: white;
     border-radius: 15px;
 }
 #nono{
-    background-color: yellow;
+    background-color: white;
     border-radius: 15px;
 }
 #decimo{
-    background-color: red;
+    background-color: white;
     border-radius: 15px;
 }
