@@ -1,0 +1,25 @@
+body{
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../Imagens/OPM.jpg);
+    background-repeat: repeat;
+}
+
+main{
+    background-color: tomato;
+    width: 80%;
+    height: 500px;
+
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    box-shadow: 15px 10px gray;
+}

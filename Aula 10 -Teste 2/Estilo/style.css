@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../Imagem/Goku.jpeg);
+    background-repeat: repeat;
+    background-size: 300px;
+}
+
+section{
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    box-shadow: 5px 5px gray;
+}
