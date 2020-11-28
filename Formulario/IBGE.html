@@ -12,80 +12,101 @@
     <main>
         <section>
             <form action="">
-                <input type="text" name="Nome" id="Nome" placeholder="Nome">
-                <input type="text" name=" Sobrenome" id="Sobrenome" placeholder="Sobrenome"><br>
+                <input type="text" name="Nome" id="Nome" placeholder="Nome" required>
+                <input type="text" name=" Sobrenome" id="Sobrenome" placeholder="Sobrenome" required><br>
                 <br>
                 <label for="Nascimento">Data de Nascimento</label><br>
-                <input type="date" id="Data de Nascimento" placeholder="Data de Nascimento"><br>
+                <input type="date" id="Data_de_Nascimento" placeholder="Data de Nascimento" required><br>
                 <br>
                 <label for="email">Informe seu email:</label><br>
-                <input type="email" name="email" id="email" placeholder="Adicione seu email"><br>
+                <input type="email" name="email" id="email" placeholder="Adicione seu email" required><br>
                 <br>
                 <label for="Telefone">Telefone</label><br>
-                <input type="tel" name="Telefone" id="Telefone" placeholder="Informe seu número">
+                <input type="tel" name="Telefone" id="Telefone" placeholder="Informe seu número" required>
                 <br>
                 
+                <h2>Pesquisa</h2>
+                <p>Qual seu sexo:</p>
+                <input type="radio" name="genero" id="Feminino" value="Feminino" required>
+                <label for="Feminino">Feminino</label><br>
+
+                <input type="radio" name="genero" id="Masculino" value="Masculino">
+                <label for="Masculino">Masculino</label><br>
+
+                <input type="radio" name="genero" id="Outro" value="Outro">
+                <label for="Outro">Outro</label><br>
+
+                <p>Qual seu grau escolar:</p>
+                <input type="radio" name="escolaridade" id="EFI" value="Ensino Fundamental incompleto" required>
+                <label for="EFI">Ensino Fundamental Incompleto</label><br>
+
+                <input type="radio" name="escolaridade" id="EFC" value="Completo">
+                <label for="EFC">Ensino Fundamental Completo</label><br>
+
+                <input type="radio" name="escolaridade" id="EMI" value="Ensino Médio Incompleto">
+                <label for="EMI">Ensino Médio Incompleto</label><br>
+
+                <input type="radio" name="escolaridade" id="EMC" value="Ensino Médio Completo">
+                <label for="EMC">Ensino Médio Completo</label><br>
+
+                <input type="radio" name="escolaridade" id="ETEC" value="Técnico Tecnico">
+                <label for="ETEC">Ensino Técnico</label>
+
+                <input type="radio" name="grau" id="Cursando" value="Cursando">
+                <label for="Cursando">Cursando</label>
+
+                <input type="radio" name="grau" id="Completo" value="Completo">
+                <label for="Completo">Completo</label><br>
+
+                <input type="radio" name="escolaridade" id="Superior" value="Superior">
+                <label for="Superior">Ensino Superior</label>
+
+                <input type="radio" name="grau1" id="Cursando1" value="Cursando">
+                <label for="Cursando1">Cursando</label>
+
+                <input type="radio" name="grau1" id="Completo1" value="Completo">
+                <label for="Completo1">Completo</label><br>
+
+                <input type="radio" name="escolaridade" id="Nenhum" value="Nenhum">
+                <label for="Nenhum">Nenhuma</label><br>
+
+                <p>Possui Casa Própria?</p>
+                <input type="radio" name="casa" id="Sim" value="Sim, tenho casa própria" required>
+                <label for="Sim">Sim, tenho casa própria</label><br>
+
+                <input type="radio" name="casa" id="Não" value="Não, moro de aluguel">
+                <label for="Não">Não, moro de aluguel</label><br>
+
+                <p>Quantas pessoas moram na casa?</p>
+                <input type="radio" name="pessoa" id="pessoa1" value="Uma pessoa" required>
+                <label for="pessoa1">1</label><br>
+
+                <input type="radio" name="pessoa" id="pessoa2" value="Duas pessoas">
+                <label for="pessoa2">2</label><br>
+
+                <input type="radio" name="pessoa" id="pessoa3" value="Três pessoas">
+                <label for="pessoa3">3</label><br>
+
+                <input type="radio" name="pessoa" id="pessoa4" value="Quatro pessoas">
+                <label for="pessoa4">4</label><br>
+
+                <input type="radio" name="pessoa" id="pessoa5" value="Cinco pessoas">
+                <label for="pessoa5">5</label><br>
+
+                <input type="radio" name="pessoa" id="pessoa6" value="Seis pessoas ou mais">
+                <label for="pessoa6">6 ou mais</label><br>
+
+                <p>Está trabalhando atualmente?</p>
+                <input type="radio" name="resposta" id="Trabalho" value="Trabalho" required>
+                <label for="Trabalho">Trabalho</label><br>
+
+                <input type="radio" name="resposta" id="Desempregado" value="Desempregado">
+                <label for="Desempregado">Desempregado</label><br>
+                <br>
+                <input type="submit" value="Enviar" onclick="enviar()">
             </form>
         </section>
-
-        <section>
-            <h2>Indice escolar</h2>
-            <p>Qual seu sexo:</p>
-            <input type="radio" name="Feminino" id="Feminino" value="Feminino">
-            <label for="Feminino">Feminino</label><br>
-            <input type="radio" name="gênero" id="Masculino" value="Masculino">
-            <label for="Masculino">Masculino</label><br>
-            <input type="radio" name="Outro" id="Outro" value="Outro">
-            <label for="Outro">Outro</label><br>
-            <p>Qual seu grau escolar:</p>
-            <input type="radio" name="EFI" id="EFI" value="Ensino Fundamental incompleto">
-            <label for="EFI">Ensino Fundamental Incompleto</label><br>
-            <input type="radio" name="EFC" id="EFC" value="Completo">
-            <label for="EFC">Ensino Fundamental Completo</label><br>
-            <input type="radio" name="EMI" id="EMI" value="Ensino Médio Incompleto">
-            <label for="EMI">Ensino Médio Incompleto</label><br>
-            <input type="radio" name="EMC" id="EMC" value="Ensino Médio Completo">
-            <label for="EMC">Ensino Médio Completo</label><br>
-            <input type="radio" name="ETEC" id="ETEC" value="Técnico Tecnico">
-            <label for="ETEC">Ensino Técnico</label>
-            <input type="checkbox" name="Cursando" id="Cursando" value="Cursando">
-            <label for="Cursando">Cursando</label>
-            <input type="checkbox" name="Completo" id="Completo" value="Completo">
-            <label for="Completo">Completo</label><br>
-            <input type="radio" name="ES" id="ES" value="Superior">
-            <label for="Superior">Ensino Superior</label>
-            <input type="checkbox" name="Cursando" id="Cursando" value="Cursando">
-            <label for="Cursando">Cursando</label>
-            <input type="checkbox" name="Completo" id="Completo" value="Completo">
-            <label for="Completo">Completo</label><br>
-            <input type="radio" name="Nenhum" id="Nenhum" value="Nenhum">
-            <label for="Nenhum">Nenhuma</label><br>
-            <p>Possui Casa Própria?</p>
-            <input type="radio" name="Sim" id="Sim" value="Sim, tenho casa própria">
-            <label for="Sim">Sim, tenho casa própria</label><br>
-            <input type="radio" name="Não" id="Não" value="Não, moro de aluguel">
-            <label for="Não">Não, moro de aluguel</label><br>
-            <p>Quantas pessoas moram na casa?</p>
-            <input type="radio" name="pessoa1" id="pessoa1" value="Uma pessoa">
-            <label for="Uma pessoa">1</label><br>
-            <input type="radio" name="pessoa2" id="pessoa2" value="Duas pessoas">
-            <label for="Duas pessoas">2</label><br>
-            <input type="radio" name="pessoa3" id="pessoa3" value="Três pessoas">
-            <label for="Três pessoas">3</label><br>
-            <input type="radio" name="pessoa4" id="pessoa4" value="Quatro pessoas">
-            <label for="Quatro pessoas">4</label><br>
-            <input type="radio" name="pessoa5" id="pessoa5" value="Cinco pessoas">
-            <label for="Cinco pessoas">5</label><br>
-            <input type="radio" name="pessoa6+" id="pessoa6+" value="Seis pessoas ou mais">
-            <label for="Seis pessoas ou mais">6 ou mais</label><br>
-            <p>Está trabalhando atualmente?</p>
-            <input type="radio" name="Sim" id="Sim" value="Trabalho">
-            <label for="Trabalho">Trabalho</label><br>
-            <input type="radio" name="Não" id="Não" value="Desempregado">
-            <label for="Desempregado">Desempregado</label><br>
-            <br>
-            <input type="submit" value="Enviar">
-        </section>
     </main>
+    <script src="js/listener.js"></script>
 </body>
 </html>
