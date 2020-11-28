@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 11 - Formulários</title>
+
+    <!-- CSS Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet"> 
+
+    <!-- Meu CSS Principal-->
+    <link rel="stylesheet" href="./styles/main.css">
+    
+</head>
+<body>
+    <main>
+        <!-- Título da Página - H1 - Por convenção apenas uma TAG por página -->
+        <h1>Aula 11 - Formulários</h1>
+        <section>
+            <!-- Título de Seção - H2 -->
+            <h2>Login</h2> 
+            <form action="">
+                <input type="text" name="login" id="username" placeholder="Username">
+                <input type="password" name="senha" id="password" placeholder="Senha"><br>
+                <input type="submit" value="Entrar">
+            </form>
+        </section>
+        <section>
+            <h2>Cadastro</h2>
+            <form action="">
+                <label for="nome">Nome:</label><br>
+                <input type="text" name="nome" id="nome" required> <br>
+
+                <label for="sobrenome">Sobrenome:</label><br>
+                <input type="text" name="sobrenome" id="sobrenome"> <br>
+
+                <label for="nascimento">Nascimento:</label><br>
+                <input type="date" name="data-de-nascimento" id="nascimento" max="2002-01-01"> <br>
+                
+                <input type="radio" name="genero" id="genero-feminino" value="feminino" checked>
+                <label for="genero-feminino">Feminino</label><br>
+
+                <input type="radio" name="genero" id="genero-masculino" value="masculino">
+                <label for="genero-masculino">Masculino</label><br>
+
+
+                <hr>
+                <input type="text" name="login" id="username" placeholder="Username">
+                <input type="password" name="senha" id="password" placeholder="Senha"><br>
+                <hr>
+                
+                <input type="submit" id="cadastrar" value="Cadastrar!">
+            </form>
+        </section>
+    </main>
+</body>
+</html>
