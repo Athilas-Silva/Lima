@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login</title>
+    <script>
+        var usuario_salvo = "athilas"
+        var senha_salva = "12345"
+        function verificarCredenciais(){
+            let usuario_digitado = document.getElementById("usuario").value
+            let senha_digitada = document.getElementById("senha").value
+
+            if ((usuario_digitado == usuario_salvo) && (senha_digitada == senha_salva)) {
+                document.body.style.backgroundColor = "green"
+            }
+            else{
+                document.body.style.backgroundColor = "red"
+            }
+        }
+
+        function cadastrarCredenciais(){
+            usuario_salvo = document.getElementById("usuario").value
+            senha_salva = document.getElementById("senha").value
+            alert("Bem vindo, Cadastro realizado com sucesso")
+        }
+    </script>
+</head>
+<body>
+    <h1>Login</h1>
+    <input type="text" id="usuario" placeholder="Nome"><br>
+    <input type="password" id="senha" placeholder="Digite sua senha"><br>
+    <button onclick="cadastrarCredenciais()">Cadastrar</button>
+    <button onclick="verificarCredenciais()">Verificar</button>
+</body>
+</html>
