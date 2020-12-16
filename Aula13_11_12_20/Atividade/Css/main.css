@@ -1,0 +1,73 @@
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-image: url(../Imagens/background01.jpg);
+}
+
+main{
+    margin-bottom: 225px;
+    width:100%; 
+    height:1500px; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+
+div.card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(216, 244, 253);
+    width: 42%;
+    height: 290px;
+    margin: 25px;
+    
+    border-radius: 10px;
+    box-shadow: 10px 10px rgb(253, 192, 112);
+}
+
+form{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+}
+
+#resultado {
+    margin-top: 10px;
+}
+
+div{
+    height: 15%;
+}
+
+div form input{
+    margin-top: 2%;
+    width: 65%;
+    height: 20%;
+    border-radius: 5px;
+}
+
+div div button{
+    margin-top: 2%;
+    width: 50%;
+    height: 30px;
+    border-radius: 25px;
+    background-color:white;
+    font-size: 14px;
+}
+
+div div button:hover{
+  background-color: rgb(245, 245, 167);
+}
+
+#div_button_cal{
+  width: 100%;
+}     
+
+.button_cal{
+    width: 15%;
+    margin: 10px;
+}
