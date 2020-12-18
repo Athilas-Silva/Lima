@@ -3,7 +3,9 @@ body{
     height: 100%;
     display: flex;
     background-image: url(../Imagens/background01.jpg);
+    font-family: Heebo, sans-serif;
 }
+    
 
 main{
     margin-bottom: 225px;
@@ -22,6 +24,8 @@ div.card{
     width: 42%;
     height: 290px;
     margin: 25px;
+    min-width: 200px;
+    padding: 20px;
     
     border-radius: 10px;
     box-shadow: 10px 10px rgb(253, 192, 112);

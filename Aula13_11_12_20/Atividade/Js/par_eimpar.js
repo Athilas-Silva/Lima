@@ -1,4 +1,3 @@
-  
 function par_e_impar(){
     let num = parseInt(document.getElementById("par&impar").value)
     let resultado
@@ -11,10 +10,12 @@ function par_e_impar(){
             resultado = "Este número é par"
         }
         
-        else  
-        {
-            
+        else if (num % 2 >= 1) {    
             resultado = "Este número é ímpar"
+        }
+
+        else {
+            resultado = "Insira um número"
         }
     
         
