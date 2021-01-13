@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="estilo/quiz.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Quiz de ANIMES</h1>
+        </header>
+        
+        <section>
+
+            <div id="modal" class="modal">
+                <div class="modal-content" id="conteudo-modal">
+                    <span class="close" onclick="fechar()">&times;</span>
+                    
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(0)">
+                <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(1)">
+                <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(2)">
+                <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(3)">
+                <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(4)">
+            </div>
+            
+            <div class="card">
+                <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(5)">
+                <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(6)">
+                <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(7)">
+                <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(8)">
+                <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(9)">
+            </div>
+
+                <a href="index.html">
+                    <img src="./imagem/voltar.png" alt="voltar">
+                </a>
+        </section>
+    </main>
+
+    <script src="js/quiz.js"></script>
+</body>
+</html>
