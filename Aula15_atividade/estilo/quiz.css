@@ -1,9 +1,8 @@
 body{
-    background-color: blue;
+    background-color: rgb(185, 185, 247);
     font-family: sans-serif;
-    background-image: url();
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(../imagem/background4.png);
+    background-repeat: repeat;
     font-family: sans-serif;
 }
 header{
@@ -15,7 +14,12 @@ input, button{
 }
 div{
     margin: 10px;
+}
 
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* The Modal (background) */

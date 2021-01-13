@@ -1,6 +1,9 @@
 var modal = document.getElementById("modal")
 var conteudo = document.getElementById("conteudo-modal")
 var imagem = document.createElement("img")
+var nome = localStorage.getItem("usuario")
+
+//Array para pegar as imagens no HTML e mostra-las ao usuário com as perguntas
 var cartas = [
     {
         imagem: "./imagem/Bleach.png",
@@ -34,11 +37,11 @@ var cartas = [
     }
 ];
 
+
 function pergunta(n){
     imagem.setAttribute("src", cartas[n].imagem);
     conteudo.appendChild(imagem);
     modal.style.display = "block";
-
 }
 
 function fechar(){
