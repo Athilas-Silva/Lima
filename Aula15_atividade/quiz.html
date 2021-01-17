@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
     <link rel="stylesheet" href="estilo/quiz.css">
+    <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <main>
@@ -17,7 +18,14 @@
             <div id="modal" class="modal">
                 <div class="modal-content" id="conteudo-modal">
                     <span class="close" onclick="fechar()">&times;</span>
-                    
+                    <p id="questionario"></p>
+                    <input type="radio" name="alter" id="input0" value="0">
+                    <label id="label0" for="input0"></label>
+                    <input type="radio" name="alter" id="input1" value="1">
+                    <label id="label1" for="input1"></label>
+                    <input type="radio" name="alter" id="input2" value="2">
+                    <label id="label2" for="input2"></label>
+                    <button id="botaoR" type="submit">Responder</button>
                 </div>
             </div>
 
@@ -27,19 +35,25 @@
                 <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(2)">
                 <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(3)">
                 <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(4)">
+                <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(5)">
             </div>
             
             <div class="card">
-                <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(5)">
                 <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(6)">
                 <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(7)">
                 <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(8)">
                 <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(9)">
+                <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(10)">
+                <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(11)">
             </div>
 
-                <a href="index.html">
-                    <img src="./imagem/voltar.png" alt="voltar">
-                </a>
+            <div id="footer">
+                <button id="save" onclick="salvar()">Salvar Pontuação</button>
+            </div>
+            
+            <a href="index.html">
+                <img src="./imagem/voltar.png" alt="voltar">
+            </a>
         </section>
     </main>
 
