@@ -1,7 +1,7 @@
 var modal = document.getElementById("modal");
 var conteudo = document.getElementById("conteudo-modal");
 var imagem = document.createElement("img");
-var nome = localStorage.getItem("usuario");
+var nome = localStorage.getItem("nome");
 var questi = document.getElementById("questionario"); //paragrafo com as perguntas
 var input0 = document.getElementById("input0"); 
 var input1 = document.getElementById("input1");
@@ -124,7 +124,6 @@ function fechar(){
 }
 
 function responder(n){
-    alert("respondeu");
     if(input0.checked){
         pontuacaoAtual = input0.value == cartas[n].resposta ? pontuacaoAtual + 10 : pontuacaoAtual + 0;
     }
@@ -138,7 +137,7 @@ function responder(n){
 }
 
 function salvar(){
-    if(nome == localStorage.getItem("usuario")){
+    if(nome == localStorage.getItem("nome")){
         alert(`Parabéns ${nome}, sua pontuação foi de ${pontuacaoAtual}`)
     }
     else{
