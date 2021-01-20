@@ -1,31 +1,17 @@
 body{
     background-image: url(../imagem/background.png);
     background-size: cover;
+    background-repeat: no-repeat;
     font-family: sans-serif;
     font-size: 16px;
     background-color: rgb(152, 212, 231);
     margin: 0px;
-    /*display: flex;
-    justify-content: center;*/
 }
-
-/*.card{
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    /*background-color: rgb(129, 129, 235)*/
 
 input[type="text"]:focus{
     background-color: moccasin;
     font-family: sans-serif;
 }
-
-/*footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(129, 129, 235);
-}*/
 
 button{
     border-radius: px;
