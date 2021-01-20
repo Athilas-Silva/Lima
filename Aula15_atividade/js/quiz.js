@@ -167,11 +167,11 @@ function loadRecord(){
         novoRecorde = JSON.parse(dadosSalvos);
         
         for(let i = 0; i <= novoRecorde.length; i++){
-            if(novoRecorde[i].record >= 100){
+            if(novoRecorde[i].record >= 90){
                 users[0].textContent = novoRecorde[i].userName
                 ponto[0].textContent = novoRecorde[i].record
             }
-            else if(novoRecorde[i].record <= 70 && novoRecorde[i].record >= 50){
+            else if(novoRecorde[i].record <= 80 && novoRecorde[i].record >= 60){
                 users[1].textContent = novoRecorde[i].userName
                 ponto[1].textContent = novoRecorde[i].record
             }
