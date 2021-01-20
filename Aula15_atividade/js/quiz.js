@@ -23,84 +23,96 @@ var cartas = [
         questionario: "Qual o nome do pai do Protagonista?",
         alter: ["Urahara Kisuke", "Isshin Kurosaki", "Masaki Kurosaki"],
         resposta: 1,
-        pontos: 10
+        pontos: 10,
+        feita: false,
     },
     {
         imagem: "./imagem/Boku-no-Hero.png",
         questionario: "Quanto de poder do One for All Midoriya consegue suportar atualmente?",
         alter: ["10%", "15%", "20%"],
         resposta: 2,
-        pontos: 10
+        pontos: 10,
+        feita: false,
     },
     {
         imagem: "./imagem/black-clover.jpeg",
         questionario: "Qual o nome do Rei Mago do reino de Clover?",
         alter: ["Augustus Kira Clover XIII", "Julius Novachrono", "Lemiel Silvamillion Clover"],
         resposta: 1,
-        pontos: 10
+        pontos: 10,
+        feita: false,
     },
     {
         imagem: "./imagem/Dragon-ball-super.png",
         questionario: "Qual guerreiro do universo 7 foi o quarto eliminado do Torneio do Poder?",
         alter: ["Mestre Kame", "Nº18", "Piccolo"],
         resposta: 2,
-        pontos: 10
+        pontos: 10,
+        feita: false,
     },
     {
         imagem: "./imagem/goblin.jpg",
         questionario: "O que o Goblin Slayer é?",
         alter: ["Humano", "Elfo", "Goblin"],
         resposta: 0,
-        pontos: 10
+        pontos: 10,
+        feita: false,
     },
     {
         imagem: "./imagem/jujutsu-kaisen.png",
         questionario: "Qual o nome da maldição que Yuji Itadori engole?",
         alter: ["Mahito", "Nanami", "Sukuna"],
         resposta: 2,
-        pontos: 10
+        pontos: 10,
+        feita: false,
     },
     {
         imagem: "./imagem/Naruto-Shippuden.png",
         questionario: "Quem é conhecido como Sábio dos Seis caminhos?",
         alter: ["Indra Otsutsuki", "Ashura Otsutsuki", "Otsutsuki Hagoromo"],
         resposta: 2,
-        pontos: 10
+        pontos: 10,
+        feita: false,
     },
     {
         imagem: "./imagem/One-Piece.png",
         questionario: "Qual o nome da fruta que Luffy comeu?",
         alter: ["Gomu Gomu no Mi", "Gura Gura no Mi", "Ope Ope no Mi"],
         resposta: 0,
-        pontos: 10
+        pontos: 10,
+        feita: false,
     },
     {
         imagem: "./imagem/opm2.png",
         questionario: "Qual a classificação do Saitama na Associação de Heróis? (Segunda Temporada)",
         alter: ["A-39", "B-7", "B-1"],
         resposta: 1,
-        pontos: 10
+        pontos: 10,
+        feita: false,
     },
     {
         imagem: "./imagem/Shingeki-no-kyojin.png",
         questionario: "Quanto tempo de vida tem um portador de Titan?",
         alter: ["13 anos", "14 anos", "15 anos"],
         resposta: 0,
-        pontos: 10
+        pontos: 10,
+        feita: false,
     },
     {
         imagem: "./imagem/yu-yu-hakusho.png",
         questionario: "Qual o nome da mestra do Yusuke Urameshi?",
         alter: ["Genkai", "Toguro", "Hiei"],
         resposta: 0,
-        pontos: 10
+        pontos: 10,
+        feita: false,
     },
     {
         imagem: "./imagem/dr-stone.jpg",
         questionario: "Qual é o nome desse personagem?",
         alter: ["Tsukasa Shishio", "Chrome", "Senku Ishigami"],
         resposta: 2,
-        pontos: 10
+        pontos: 10,
+        feita: false
     }
 ];
 
@@ -129,15 +141,21 @@ function fechar(){
 }
 //função que acrescenta os pontos caso a resposta esteja correta
 function responder(n){
-    if(input0.checked){
-        pontuacaoAtual = input0.value == cartas[n].resposta ? pontuacaoAtual + 10 : pontuacaoAtual + 0;
+    if(cartas[n].feita === false){
+        if(input0.checked){
+            pontuacaoAtual = input0.value == cartas[n].resposta ? pontuacaoAtual + 10 : pontuacaoAtual + 0;
+        }
+        else if(input1.checked){
+            pontuacaoAtual = input1.value == cartas[n].resposta ? pontuacaoAtual + 10 : pontuacaoAtual + 0;
+        }
+        else if(input2.checked){
+            pontuacaoAtual = input2.value == cartas[n].resposta ? pontuacaoAtual + 10 : pontuacaoAtual + 0;
+        }
+        cartas[n].feita = true;
     }
-    else if(input1.checked){
-        pontuacaoAtual = input1.value == cartas[n].resposta ? pontuacaoAtual + 10 : pontuacaoAtual + 0;
-    }
-    else if(input2.checked){
-        pontuacaoAtual = input2.value == cartas[n].resposta ? pontuacaoAtual + 10 : pontuacaoAtual + 0;
-    }
+        else{
+            alert("Você já respondeu pergunta");
+        }
     fechar();
 }
 //função que falta falta os pontos e exige a mensagem após clicar em salvar
@@ -184,7 +202,6 @@ function loadRecord(){
     }
 }
 
-loadRecord()
 //função que permite climar fora da imagem para fechar, sem precisar clicar no X
 window.onclick = function(event) {
     if (event.target == modal) {
