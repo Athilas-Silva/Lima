@@ -1,21 +1,30 @@
 body{
-    background-color: blue;
+    background-color: rgb(185, 185, 247);
     font-family: sans-serif;
-    background-image: url();
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url(../imagem/background4.png);
+    background-repeat: repeat;
     font-family: sans-serif;
+    text-align: center;
 }
+
 header{
     text-align: center;
 }
+
 input, button{
     font-family: sans-serif;
     font-size: 14px;
 }
-div{
-    margin: 10px;
 
+img{
+    margin: 10px 0px;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 500px;
 }
 
 /* The Modal (background) */
@@ -55,4 +64,45 @@ div{
     color: #000;
     text-decoration: none;
     cursor: pointer;
+}
+
+#baixo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#save{
+    border-radius: 5px;
+}
+
+#tabela{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+table{
+    width: 50%;
+}
+
+table,
+table th,
+table td{
+    text-align: center;
+    background-color: rgb(185, 185, 247);
+    border:1px solid;
+    border-color: black;
+}
+
+#novoJogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+#newgame{
+    border-radius: 5px;
+}
+#canto{
+    text-align: left;
 }

@@ -5,41 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz</title>
     <link rel="stylesheet" href="estilo/quiz.css">
+    <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <header>
+        <h1>Quiz de ANIMES - Responda &#x1F914;</h1>
+    </header>
+
     <main>
-        <header>
-            <h1>Quiz de ANIMES</h1>
-        </header>
         
         <section>
 
             <div id="modal" class="modal">
                 <div class="modal-content" id="conteudo-modal">
                     <span class="close" onclick="fechar()">&times;</span>
-                    
+                    <p id="questionario"></p>
+                    <input type="radio" name="alter" id="input0" value="0">
+                    <label id="label0" for="input0"></label>
+                    <input type="radio" name="alter" id="input1" value="1">
+                    <label id="label1" for="input1"></label>
+                    <input type="radio" name="alter" id="input2" value="2">
+                    <label id="label2" for="input2"></label>
+                    <button id="botaoR" type="submit">Responder</button>
                 </div>
             </div>
 
             <div class="card">
-                <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(0)">
-                <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(1)">
-                <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(2)">
-                <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(3)">
-                <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(4)">
+                <img src="./imagem/fundo.jpg" alt="Fundo da carta" onclick="pergunta(0)">
+                <img src="./imagem/fundo.jpg" alt="Fundo da carta" onclick="pergunta(1)">
+                <img src="./imagem/fundo.jpg" alt="Fundo da carta" onclick="pergunta(2)">
+                <img src="./imagem/fundo.jpg" alt="Fundo da carta" onclick="pergunta(3)">
+            </div>
+            <div class="card">
+                <img src="./imagem/fundo.jpg" alt="Fundo da carta" onclick="pergunta(4)">
+                <img src="./imagem/fundo.jpg" alt="Fundo da carta" onclick="pergunta(5)">
+                <img src="./imagem/fundo.jpg" alt="Fundo da carta" onclick="pergunta(6)">
+                <img src="./imagem/fundo.jpg" alt="Fundo da carta" onclick="pergunta(7)">
             </div>
             
             <div class="card">
-                <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(5)">
-                <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(6)">
-                <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(7)">
-                <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(8)">
-                <img src="./imagem/fundo.jpg" alt="Fundo da carta" width="120px" onclick="pergunta(9)">
+                <img src="./imagem/fundo.jpg" alt="Fundo da carta" onclick="pergunta(8)">
+                <img src="./imagem/fundo.jpg" alt="Fundo da carta" onclick="pergunta(9)">
+                <img src="./imagem/fundo.jpg" alt="Fundo da carta" onclick="pergunta(10)">
+                <img src="./imagem/fundo.jpg" alt="Fundo da carta" onclick="pergunta(11)">
             </div>
 
-                <a href="index.html">
-                    <img src="./imagem/voltar.png" alt="voltar">
+            <div id="baixo">
+                <button id="save" onclick="salvar()">Salvar Pontuação</button>
+            </div>
+            <br>
+                <div id="tabela">
+
+                    <table id="ranking">
+                        <caption>
+                            <strong>Classificação Geral</strong>
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>Posição</th>
+                                <th>Nome</th>
+                                <th>Pontuação</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>&#x1F451;</td>
+                                <td class="user">teste 1</td>
+                                <td class="ponto">50</td>
+                            </tr>
+
+                            <tr>
+                                <td>2ª</td>
+                                <td class="user">teste 2</td>
+                                <td class="ponto">40</td>
+                            </tr>
+
+                            <tr>
+                                <td>3ª</td>
+                                <td class="user">teste 3</td>
+                                <td class="ponto">30</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <a href="quiz.html" id="novoJogo">
+                    <button id="newgame">Jogar Novamente</button>
                 </a>
+                
+                <div id="canto">
+                    <a href="index.html">
+                        <img src="./imagem/voltar.png" alt="voltar">
+                    </a>
+                </div>
         </section>
     </main>
 
