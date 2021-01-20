@@ -8,9 +8,12 @@ var nomesalvo = localStorage.getItem("nome")
 
 if(nomesalvo == null){
     var nome = prompt("Bem Vindo ao Quiz de Animes, por favor informe seu nome: ");
-    alert(`Obrigado ${nome}, conheça as regras do jogo`);
     if(nome != null){
+        alert(`Obrigado ${nome}, conheça as regras do jogo`);
         localStorage.setItem("nome", nome);
+    }
+    else{
+        alert("Obrigado, conheça as regras do jogo");
     }
 
 }
